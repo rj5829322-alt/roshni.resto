@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EMBER & OAK — An intimate wood-fired fine dining restaurant celebrating seasonal ingredients, dry-aged cuts, and artisanal craft." />
+  <meta name="keywords" content="fine dining restaurant, wood-fired cuisine, tasting menu, table reservation, gourmet dining, craft cocktails" />
+  <meta name="author" content="EMBER & OAK" />
+  <meta property="og:title" content="EMBER & OAK | Modern Wood-Fired Fine Dining" />
+  <meta property="og:description" content="Where open flame meets quiet refinement. Reserve your table for an unforgettable culinary evening." />
+  <meta property="og:type" content="website" />
+  <title>EMBER &amp; OAK | Wood-Fired Fine Dining</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="EMBER & OAK Home">
+        <svg class="brand-emblem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="8" stroke="currentColor" stroke-width="1.4" />
+          <path d="M20 9.5C23.5 14 26 17.2 26 21.3C26 24.8 23.3 27.5 20 27.5C16.7 27.5 14 24.8 14 21.3C14 18.8 15.4 16.7 17.2 14.8C17.1 16.9 18.2 18.2 19.4 18.2C20.5 18.2 21.3 17.1 21.1 15.3C20.9 13.1 20.3 11.1 20 9.5Z" stroke="#E07A38" stroke-width="1.5" stroke-linejoin="round" />
+          <line x1="11" y1="31.5" x2="29" y2="31.5" stroke="currentColor" stroke-width="1.2" opacity="0.55" />
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">EMBER &amp; OAK</span>
+          <span class="brand-sub">ATELIER CULINAIRE</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#welcome" class="nav-link">Welcome</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#chefs-special" class="nav-link">Chef's Special</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#reservations" class="btn btn-primary btn-sm">Reserve a Table</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-backdrop" class="mobile-backdrop" hidden></div>
+  <aside id="mobile-nav-drawer" class="mobile-drawer" aria-label="Mobile Navigation" hidden>
+    <div class="mobile-drawer-header">
+      <span class="brand-name">EMBER &amp; OAK</span>
+      <button id="mobile-menu-close" class="icon-close-btn" type="button" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="#welcome" class="mobile-nav-link">Welcome</a>
+      <a href="#menu" class="mobile-nav-link">Our Menu</a>
+      <a href="#chefs-special" class="mobile-nav-link">Chef's Special</a>
+      <a href="#about" class="mobile-nav-link">Our Story</a>
+      <a href="#gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#reviews" class="mobile-nav-link">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link">Hours &amp; Location</a>
+      <a href="#reservations" class="btn btn-primary mobile-drawer-cta mobile-nav-link">Reserve a Table</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <p>742 Mercer Street, SoHo, New York</p>
+      <p>+1 (212) 555-0194</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- 1. Full-Screen Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg" role="img" aria-label="Wood-fired gourmet dish plated on dark stoneware"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow-tag reveal">WOOD-FIRED FINE DINING &bull; NEW YORK</span>
+        <h1 class="hero-title reveal">
+          Where Open Flame Meets <em>Quiet Refinement</em>
+        </h1>
+        <p class="hero-subtitle reveal">
+          An intimate culinary sanctuary celebrating heritage ingredients, white-oak hearth cooking, and a cellar curated for unforgettable evenings.
+        </p>
+        <div class="hero-cta-group reveal">
+          <a href="#reservations" class="btn btn-primary btn-lg">Book Your Experience</a>
+          <a href="#menu" class="btn btn-outline btn-lg">Explore Seasonal Menu</a>
+        </div>
+      </div>
+
+      <a href="#welcome" class="scroll-cue" aria-label="Scroll down to Welcome section">
+        <span>SCROLL</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- 2. Welcome & Animated Counters Section -->
+    <section id="welcome" class="section welcome-section">
+      <div class="container">
+        <div class="welcome-grid">
+          <div class="welcome-media reveal">
+            <div class="media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85"
+                alt="Chef plating fine dining course with tweezers under warm light"
+                loading="lazy"
+              />
+            </div>
+            <div class="floating-badge">
+              <span class="badge-year">EST. 2008</span>
+              <span class="badge-caption">Michelin Guide Recommended</span>
+            </div>
+          </div>
+
+          <div class="welcome-copy reveal">
+            <span class="section-eyebrow">WELCOME TO EMBER &amp; OAK</span>
+            <h2 class="section-title">Crafted by Fire, Guided by Seasonality</h2>
+            <p class="lead-text">
+              At EMBER &amp; OAK, every evening unfolds around the primordial warmth of our custom white-oak and cherrywood hearth.
+            </p>
+            <p class="body-text">
+              Led by Executive Chef Julian Vance, our kitchen partners directly with Hudson Valley farms, coastal day-boat fishermen, and artisanal ranchers. Each dish balances smoke, acidity, and delicate texture—paired effortlessly with rare Old World vintages and botanical cocktails.
+            </p>
+
+            <div class="signature-row">
+              <div>
+                <p class="signature-script">Julian Vance</p>
+                <p class="signature-role">Executive Chef &amp; Co-Founder</p>
+              </div>
+              <a href="#about" class="text-link">Discover Our Philosophy &rarr;</a>
+            </div>
+
+            <!-- Animated Counters -->
+            <div class="counters-grid" id="stats-counters">
+              <div class="counter-card">
+                <div class="counter-value">
+                  <span class="counter-number" data-target="18">0</span><span class="counter-suffix">+</span>
+                </div>
+                <p class="counter-label">Years of Culinary Craft</p>
+              </div>
+              <div class="counter-card">
+                <div class="counter-value">
+                  <span class="counter-number" data-target="14500">0</span><span class="counter-suffix">+</span>
+                </div>
+                <p class="counter-label">Delighted Guests</p>
+              </div>
+              <div class="counter-card">
+                <div class="counter-value">
+                  <span class="counter-number" data-target="96">0</span><span class="counter-suffix"> pts</span>
+                </div>
+                <p class="counter-label">Wine Spectator Cellar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Special Menu Section with Category Filtering -->
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">CURATED TASTING &amp; À LA CARTE</span>
+          <h2 class="section-title">Our Seasonal Menu</h2>
+          <p class="section-desc">
+            Thoughtfully composed plates highlighting peak-harvest produce, dry-aged prime cuts, and wood-fired seafood.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="menu-filters reveal" role="tablist" aria-label="Menu Categories">
+          <button class="filter-btn active" type="button" data-category="all" role="tab" aria-selected="true">All Dishes</button>
+          <button class="filter-btn" type="button" data-category="starters" role="tab" aria-selected="false">Starters</button>
+          <button class="filter-btn" type="button" data-category="mains" role="tab" aria-selected="false">Wood-Fired Mains</button>
+          <button class="filter-btn" type="button" data-category="seafood" role="tab" aria-selected="false">Coastal Seafood</button>
+          <button class="filter-btn" type="button" data-category="desserts" role="tab" aria-selected="false">Desserts &amp; Cocktails</button>
+        </div>
+
+        <!-- Filterable Menu Grid -->
+        <div class="menu-grid reveal" id="menu-grid">
+          <article class="menu-card" data-category="starters">
+            <div class="menu-card-head">
+              <h3>Charred Leek &amp; Black Truffle Velout&eacute;</h3>
+              <span class="menu-price">$24</span>
+            </div>
+            <p class="menu-desc">Smoked cr&egrave;me fra&icirc;che, toasted hazelnut oil, crisp brioche soldiers.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Starter</span>
+              <span class="menu-diet">Vegetarian</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="starters">
+            <div class="menu-card-head">
+              <h3>45-Day Dry-Aged Beef Tartare</h3>
+              <span class="menu-price">$28</span>
+            </div>
+            <p class="menu-desc">Smoked bone marrow emulsion, caper leaf, fermented chili, sourdough crisp.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Starter</span>
+              <span class="menu-diet">Signature</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="starters">
+            <div class="menu-card-head">
+              <h3>Ember-Roasted Maitake Mushroom</h3>
+              <span class="menu-price">$23</span>
+            </div>
+            <p class="menu-desc">Black garlic glaze, aged sheep's milk mousse, puffed wild rice.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Starter</span>
+              <span class="menu-diet">GF &bull; Vegetarian</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="menu-card-head">
+              <h3>45-Day Dry-Aged Ribeye (14 oz)</h3>
+              <span class="menu-price">$86</span>
+            </div>
+            <p class="menu-desc">Seared over white-oak coals, tallow-confit shallots, bordelaise jus.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Wood-Fired</span>
+              <span class="menu-diet">House Cut</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="menu-card-head">
+              <h3>Crown-Roasted Hudson Valley Duck</h3>
+              <span class="menu-price">$58</span>
+            </div>
+            <p class="menu-desc">Spiced Damson plum lacquer, parsnip silk, bitter radicchio, cacao jus.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Wood-Fired</span>
+              <span class="menu-diet">Chef Favorite</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="menu-card-head">
+              <h3>A5 Miyazaki Wagyu Striploin</h3>
+              <span class="menu-price">$118</span>
+            </div>
+            <p class="menu-desc">Binchotan-kissed 5 oz cut, pickled wasabi stem, smoked soy reduction.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Wood-Fired</span>
+              <span class="menu-diet">Limited Nightly</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="seafood">
+            <div class="menu-card-head">
+              <h3>Hearth-Seared Hokkaido Scallops</h3>
+              <span class="menu-price">$36</span>
+            </div>
+            <p class="menu-desc">Brown butter dashi, pickled white turnip, finger lime, crispy nori.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Seafood</span>
+              <span class="menu-diet">Gluten-Free</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="seafood">
+            <div class="menu-card-head">
+              <h3>Cedar-Planked Wild Turbot</h3>
+              <span class="menu-price">$64</span>
+            </div>
+            <p class="menu-desc">Champagne beurre blanc, braised fennel, smoked trout roe, charred lemon.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Seafood</span>
+              <span class="menu-diet">Day-Boat Catch</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card-head">
+              <h3>Smoked 72% Valrhona Tart</h3>
+              <span class="menu-price">$19</span>
+            </div>
+            <p class="menu-desc">Toasted oak ice cream, flaky Maldon salt, caramelized cocoa nibs.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Dessert</span>
+              <span class="menu-diet">Vegetarian</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card-head">
+              <h3>The Smoked Old Fashioned</h3>
+              <span class="menu-price">$24</span>
+            </div>
+            <p class="menu-desc">Small-batch rye, toasted oak demerara, walnut bitters, applewood smoke.</p>
+            <div class="menu-meta">
+              <span class="menu-tag">Cocktail</span>
+              <span class="menu-diet">Tableside Smoke</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Chef's Special Section -->
+    <section id="chefs-special" class="section special-section">
+      <div class="container">
+        <div class="special-showcase reveal">
+          <div class="special-media">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=950&q=85"
+              alt="Wood-fired bone-in Côte de Boeuf carved on warm oak board"
+              loading="lazy"
+            />
+            <span class="special-pill">Limited &bull; 12 Portions Nightly</span>
+          </div>
+
+          <div class="special-copy">
+            <span class="section-eyebrow">CHEF'S SIGNATURE TABLE PRESENTATION</span>
+            <h2 class="section-title">C&ocirc;te de Boeuf Over Live White Oak</h2>
+            <p class="body-text">
+              Our signature 36-ounce bone-in prime rib roast is dry-aged in-house for 45 days on Himalayan salt blocks, gently warmed beside the masonry hearth, then seared directly over glowing white-oak coals.
+            </p>
+            <ul class="special-list">
+              <li><strong>Accompaniments:</strong> Roasted bone marrow, pomme pur&eacute;e, charred baby leeks</li>
+              <li><strong>Sommelier Pairing:</strong> 2018 Pauillac Reserve or C&ocirc;te-R&ocirc;tie Syrah</li>
+              <li><strong>Presentation:</strong> Carved tableside for two; please allow 35 minutes</li>
+            </ul>
+            <div class="special-footer">
+              <div class="special-price">$168 <span>/ for two</span></div>
+              <a href="#reservations" class="btn btn-primary">Reserve Chef's Cut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. About / Our Story Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <span class="section-eyebrow">OUR STORY &amp; PROVENANCE</span>
+            <h2 class="section-title">Rooted in Patience, Smoke &amp; Integrity</h2>
+            <p class="body-text">
+              Since opening our doors on Mercer Street in 2008, EMBER &amp; OAK has remained committed to a singular ethos: zero gas burners, 100% seasoned hardwood embers, and unhurried hospitality.
+            </p>
+            <p class="body-text">
+              Head Sommelier Clara Mercer curates a 380-label subterranean cellar focused on sustainable growers, library Barolos, and rare Champagne houses designed to harmonize with subtle hearth smoke.
+            </p>
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <h3>100% White Oak &amp; Cherry</h3>
+                <p>Kiln-cured orchard and Appalachian timber for clean, aromatic heat.</p>
+              </div>
+              <div class="pillar-item">
+                <h3>12 Hudson Valley Farms</h3>
+                <p>Daily harvests of heirloom roots, pasture poultry, and raw-milk cheeses.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=950&q=85"
+              alt="Intimate candlelit interior of EMBER & OAK dining room"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Gallery Section with Lightbox -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">ATMOSPHERE &amp; CRAFT</span>
+          <h2 class="section-title">Inside the Atelier</h2>
+          <p class="section-desc">Click any photograph to view full details of our kitchen, cellar, and dining room.</p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <button class="gallery-card gallery-tall" type="button" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85" data-title="Seasonal Tasting Course" data-caption="Precision plating from the 7-course autumn tasting menu.">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Fine dining tasting course plated cleanly" loading="lazy" />
+            <span class="gallery-overlay"><strong>Seasonal Tasting</strong><span>View Photo</span></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85" data-title="Evening Hearth Glow" data-caption="Warm amber lighting across the main SoHo dining room.">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Warm restaurant bar and dining room" loading="lazy" />
+            <span class="gallery-overlay"><strong>Main Dining Room</strong><span>View Photo</span></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=85" data-title="Smoked Botanical Cocktails" data-caption="House-infused elixirs and wood-smoked classic cocktails.">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Craft cocktail served on dark marble bar" loading="lazy" />
+            <span class="gallery-overlay"><strong>Craft Cocktail Bar</strong><span>View Photo</span></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85" data-title="Hearth Harvest Plates" data-caption="Vibrant seasonal vegetables blistered directly on white-oak coals.">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Overhead view of gourmet dishes" loading="lazy" />
+            <span class="gallery-overlay"><strong>Harvest Plating</strong><span>View Photo</span></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85" data-title="Subterranean Wine Cellar" data-caption="Over 380 Old World and boutique grower selections.">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Sommelier pouring red wine into crystal glass" loading="lazy" />
+            <span class="gallery-overlay"><strong>The Wine Cellar</strong><span>View Photo</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Reviews / Testimonials Section -->
+    <section id="reviews" class="section reviews-section">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="section-eyebrow">ACCLAIM &amp; TESTIMONIALS</span>
+          <h2 class="section-title">Words Around the Table</h2>
+        </div>
+
+        <div class="reviews-grid reveal">
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-quote">
+              &ldquo;The 7-course tasting is a masterclass in restraint. The roasted maitake and 45-day dry-aged ribeye left our entire table speechless.&rdquo;
+            </p>
+            <footer class="review-author">
+              <strong>Elena Rostova</strong>
+              <span>New York Dining Review</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-quote">
+              &ldquo;Warm, unhurried hospitality without an ounce of pretension. Sitting at the chef's hearth counter is the best seat in SoHo.&rdquo;
+            </p>
+            <footer class="review-author">
+              <strong>Marcus &amp; Priya Chen</strong>
+              <span>Anniversary Celebration</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-quote">
+              &ldquo;Every vintage poured from the cellar felt tailored to the subtle kiss of white-oak smoke on each plate. Truly unforgettable.&rdquo;
+            </p>
+            <footer class="review-author">
+              <strong>David Thorne</strong>
+              <span>Hospitality Columnist</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Reservations Section -->
+    <section id="reservations" class="section reservations-section">
+      <div class="container">
+        <div class="reservations-grid">
+          <div class="reservation-copy reveal">
+            <span class="section-eyebrow">BOOK YOUR EVENING</span>
+            <h2 class="section-title">Reserve a Table</h2>
+            <p class="body-text">
+              Reservations for the main dining room and chef's hearth counter open 30 days in advance. For parties of 7 or more, our Oak Cellar private dining room is available upon request.
+            </p>
+            <div class="reservation-notes">
+              <div class="note-item">
+                <strong>Dinner Service</strong>
+                <span>Tue &ndash; Sun, 5:30 PM &ndash; 11:00 PM</span>
+              </div>
+              <div class="note-item">
+                <strong>Dress Code</strong>
+                <span>Smart Evening Attire</span>
+              </div>
+              <div class="note-item">
+                <strong>Dietary Care</strong>
+                <span>Vegetarian, vegan &amp; gluten-free menus accommodated</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation-card reveal">
+            <form id="reservation-form" class="reservation-form" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="guest-name">Full Name</label>
+                  <input id="guest-name" name="name" type="text" placeholder="Sophia Laurent" required />
+                </div>
+                <div class="form-field">
+                  <label for="guest-email">Email Address</label>
+                  <input id="guest-email" name="email" type="email" placeholder="sophia@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row form-row-3">
+                <div class="form-field">
+                  <label for="res-date">Date</label>
+                  <input id="res-date" name="date" type="date" required />
+                </div>
+                <div class="form-field">
+                  <label for="res-time">Time</label>
+                  <select id="res-time" name="time" required>
+                    <option value="">Select time</option>
+                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="6:15 PM">6:15 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="7:45 PM">7:45 PM</option>
+                    <option value="8:30 PM">8:30 PM</option>
+                    <option value="9:15 PM">9:15 PM</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="res-guests">Guests</label>
+                  <select id="res-guests" name="guests" required>
+                    <option value="2 Guests">2 Guests</option>
+                    <option value="3 Guests">3 Guests</option>
+                    <option value="4 Guests">4 Guests</option>
+                    <option value="5 Guests">5 Guests</option>
+                    <option value="6 Guests">6 Guests</option>
+                    <option value="7+ Guests (Private Dining)">7+ (Private)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="res-seating">Seating Area</label>
+                <select id="res-seating" name="seating">
+                  <option value="Main Dining Room">Main Dining Room</option>
+                  <option value="Chef's Hearth Counter">Chef's Hearth Counter</option>
+                  <option value="Subterranean Wine Cellar">Subterranean Wine Cellar</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="res-notes">Special Requests or Allergies</label>
+                <textarea id="res-notes" name="notes" rows="3" placeholder="Anniversary, tasting menu preference, dietary notes..."></textarea>
+              </div>
+
+              <p id="form-error" class="form-error" role="alert" hidden></p>
+              <button type="submit" class="btn btn-primary btn-lg btn-full">Confirm Table Request</button>
+            </form>
+
+            <div id="reservation-success" class="reservation-success" hidden>
+              <div class="success-badge" aria-hidden="true">&#10003;</div>
+              <h3>Reservation Request Received</h3>
+              <p id="success-message"></p>
+              <button id="reset-reservation-btn" type="button" class="btn btn-outline btn-sm">Make Another Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact & Location Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid reveal">
+          <div>
+            <span class="section-eyebrow">VISIT US IN SOHO</span>
+            <h2 class="section-title">Hours &amp; Location</h2>
+            <p class="body-text">
+              742 Mercer Street, SoHo, New York, NY 10012<br />
+              Complimentary valet available nightly from 5:00 PM.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Service Hours</h3>
+            <ul class="hours-list">
+              <li><span>Tue &ndash; Thu</span><span>5:30 PM &ndash; 10:30 PM</span></li>
+              <li><span>Fri &ndash; Sat</span><span>5:00 PM &ndash; 11:30 PM</span></li>
+              <li><span>Sunday</span><span>5:00 PM &ndash; 10:00 PM</span></li>
+              <li class="is-closed"><span>Monday</span><span>Closed</span></li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Concierge</h3>
+            <p class="contact-detail"><strong>Phone:</strong> <a href="tel:+12125550194">+1 (212) 555-0194</a></p>
+            <p class="contact-detail"><strong>Email:</strong> <a href="mailto:reservations@emberandoak.example">reservations@emberandoak.example</a></p>
+            <p class="contact-detail"><strong>Private Events:</strong> Up to 22 guests in the Oak Cellar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">EMBER &amp; OAK</span>
+        <span class="brand-sub">ATELIER CULINAIRE &bull; NEW YORK</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 EMBER &amp; OAK. All rights reserved.</p>
+      <a href="#hero" class="back-to-top">Back to Top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Gallery Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="lightbox-dialog">
+      <button id="lightbox-close" class="icon-close-btn lightbox-close" type="button" aria-label="Close photo preview">&times;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
